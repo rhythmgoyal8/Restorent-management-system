@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sign-in</title>
+    <title>SIGN_UP</title>
     <!-- CSS link -->
     <link rel="stylesheet" href="style.css">
     <!-- cdn font awesome link -->
@@ -13,7 +12,6 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
     <header class="header">
         <div class="page_logo">
@@ -35,44 +33,34 @@
         </div>
     </header>
     <main>
-        <form action="register" class="create-account">
-            <h3>Create Account</h3>
-
-            <input type="text" name="fname" placeholder="First Name">
+        <form action="login" class="login">
+            <h3>Admin Login</h3>
             <br>
-            <input type="text" name="lname" placeholder="Last Name">
+            <input type="email" name="email" id="" placeholder="enter email">
             <br>
-            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="enter password">
             <br>
-            <input type="password" name="new-password" placeholder="New Password">
-            <br>
-            <input type="password" name="password" placeholder="Confirm Password">
-            <br>
-            <input type="submit" value="register">
-
+            <input type="submit" value="submit">
         </form>
-
-        <p class="account">Already Have account <a class="sign-up" href="./sign-up.html">Sign-up</a></p>
     </main>
 
     <footer>
         <div class="box-foot">
-            <div class="social-icons">
-                <i class="fa-brands fa-facebook icons-foot"></i>
-                <i class="fa-brands fa-twitter icons-foot"></i>
-                <i class="fa-brands fa-instagram icons-foot"></i>
-                <i class="fa-solid fa-envelope icons-foot"></i>
-                <i class="fa-brands fa-youtube icons-foot"></i>
-                <i class="fa-brands fa-whatsapp icons-foot"></i>
-            </div>
-            <div class="foot-btn">
-                <button class="foot-btn-type"><a href="./admin.html" class="admin-login">Admin Panal</a> </button>
-                <button class="foot-btn-type">Terms & Conditions</button>
-                <button class="foot-btn-type">Feedback / Report</button>
-            </div>
+        <div class="social-icons">
+            <i class="fa-brands fa-facebook icons-foot" ></i>    
+            <i class="fa-brands fa-twitter icons-foot"></i>
+            <i class="fa-brands fa-instagram icons-foot"></i>
+            <i class="fa-solid fa-envelope icons-foot"></i>
+            <i class="fa-brands fa-youtube icons-foot"></i>
+            <i class="fa-brands fa-whatsapp icons-foot"></i>
         </div>
-        <p class="creator">@copywrite.NikhilPatil</p>
+        <div class="foot-btn">
+            <button class="foot-btn-type"><a href="./admin.html" class="admin-login">Admin Panal</a> </button>
+            <button class="foot-btn-type">Terms & Conditions</button>
+            <button class="foot-btn-type">Feedback / Report</button>
+        </div>
+    </div>
+    <p class="creator">@copywrite.NikhilPatil</p>
     </footer>
 </body>
-
 </html>

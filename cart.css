@@ -1,0 +1,42 @@
+.card {
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 16px;
+	margin-bottom: 16px;
+	display: flex;
+	align-items: center;
+  }
+  
+  .card img {
+	margin-right: 16px;
+		width: 30%;
+		object-fit: fill;
+	}
+  
+.product-name{
+	padding: 5px;
+	align-items: center;
+}
+.product-price{
+	padding: 5px;
+	align-items: center;
+}
+
+.product-plus,.product-minuns{
+   font-size: 25px;
+   padding: 10px;
+   background-color: rgb(255, 125, 147);
+
+}
+.product-minuns{
+	margin-left: 5px;
+	padding: 10px;
+}
+.product-remove{
+	background-color: rgb(255, 125, 147);
+	padding: 15px;
+}
+.total{
+	text-align: center;
+	font-size: 20px
+}

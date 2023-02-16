@@ -27,14 +27,25 @@
 /* sign css start */
 .sign {
     float: right;
-    padding-top: 0.5rem;
+    padding-top: 3rem;
     padding-right: 1.5rem;
+    font-size: 1.5vw;
 }
 
 .sign_in,
 .sign_up {
     padding: 0.2rem;
     text-decoration: none;
+}
+
+.fa-right-to-bracket {
+    padding-right: 5px;
+}
+
+.admin-login {
+    padding: 0.2rem;
+    text-decoration: none;
+    color: black;
 }
 
 /* Sign css end */
@@ -143,7 +154,7 @@ footer {
 }
 
 .fa-whatsapp {
-    color: green;
+    color: rgb(4, 210, 4);
 }
 
 .foot-btn-type {
@@ -153,6 +164,11 @@ footer {
     margin-right: 5px;
     background-color: rgb(255, 125, 147);
     border: none;
+}
+
+.creator {
+    font-size: 15px;
+    text-align: center;
 }
 
 /* footer end */
@@ -181,21 +197,41 @@ footer {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+.price {
+    font-size: 2vw;
+}
+
+.discription {
+    font-size: 1.5vw;
+}
+
 .card-tag {
     text-align: center;
     font-family: arial;
     padding: 10px 16px;
 }
 
+/* menu css ends */
 @media only screen and (min-width: 1024px) {
 
     .menu ul li {
         flex: 30%;
         margin: 10px;
+        padding-bottom: 40px;
+    }
+
+    .discription {
+        font-family: arial;
+        font-size: 13px;
     }
 }
 
 @media only screen and (max-width: 768px) {
+
+    .sign {
+        display: flex;
+        flex-direction: column;
+    }
 
     .menu ul li {
         flex: 45%;
@@ -203,10 +239,51 @@ footer {
     }
 }
 
+@media only screen and (max-width: 425px) {
+
+    .logo_name_icon {
+        width: 10rem;
+        height: 5rem;
+    }
+
+    .sign {
+        font-size: 3vw;
+    }
+
+    .menu ul li {
+        flex: 80%;
+        margin: 10px;
+    }
+
+    .card-tag h1 {
+        font-size: 5vw;
+    }
+
+    .card-tag p {
+        font-size: 3.5vw;
+    }
+
+    .foot-btn-type {
+        font-size: 10px;
+        height: 9vw;
+    }
+
+    .icons-foot {
+        font-size: 5vw;
+        padding: 0.5vw;
+    }
+
+    .creator {
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
 /* MENU CSS END */
 
 /* SignIn page CSS */
-.create-account {
+.create-account,
+.login {
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -215,13 +292,55 @@ footer {
     padding: 15px;
 }
 
-.create-account h3 {
+.create-account h3,
+.login h3 {
     padding: 10px;
     text-align: center;
 }
 
+.create-account,
+.login {
+    border-radius: 15px;
+}
+
 .create-account input,
-button {
+button,
+.login input {
     padding: 5px;
     border: none;
 }
+
+.account {
+    text-align: center;
+    padding: 0.5vw;
+
+}
+
+.account a {
+    text-decoration: none;
+}
+/* sign in sign out and admin page css end */
+
+/* order online start */
+
+.order-btn{
+    margin-top: 3vw;
+    width: 100%;
+    color: rgba(176, 103, 196, 0.986);
+    background-color: rgb(151, 209, 209);
+    padding: 1.5vw 0 1.5vw 0;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.view-cart-btn{
+    margin-top: 3vw;
+    width: 100%;
+    color: rgba(151, 209, 209);
+    background-color: rgba(176, 103, 196, 0.986);
+    padding: 1.5vw 0 1.5vw 0;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+/* order online end */

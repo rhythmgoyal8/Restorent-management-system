@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title>Restraurant_Management_Susytem</title>
     <!-- CSS link -->
     <link rel="stylesheet" href="style.css">
+    
     <!-- cdn font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -25,6 +26,7 @@
                 <a href="./sign-up.html" class="sign_up"><i class="fa-solid fa-right-to-bracket"></i>Sign Up</a>
             </div>
         </div>
+        
         <div class="nav">
             <a href="./index.html" class="nav_item">Home</a>
             <a href="./menu.html" class="nav_item">Menu</a>
@@ -33,86 +35,90 @@
             <a href="./orderpage.html" class="nav_item">Order Online</a>
             <a href="#my_order" class="nav_item">My Order</a>
         </div>
+
+        
     </header>
+
     <main>
         <div class="menu">
             <ul class="card">
                 <li class="card-item">
+                    <div class="product">
                     <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-yeast-donut-1666027387.jpg?crop=0.668xw:1.00xh;0.301xw,0&resize=980:*"
                         alt="Yeast Doughnut">
-                    <div class="card-tag">
-                        <h1>Yeast Doughnut</h1>
-                        <p class="price">Rs.120/-</p>
-                        <p class="discription">These doughnuts are also known as "raised doughnuts," as yeast is used as
-                            a leavener, which
-                            creates the air pockets when frying the batter that results in their signature light and
-                            airy texture. They're less likely to be crumbly, due to their spongy consistency, and can be
-                            glazed, frosted, or filled.</p>
+                    <div class="card-tag " >
+                        <h2>Yeast Doughnut</h2>
+                        <p class="price">Rs. 120.00/-</p>
+                       <button type="submit" class="order-btn "  onclick="addToCart('Yeast Doughnut',120,'https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-yeast-donut-1666027387.jpg?crop=0.668xw:1.00xh;0.301xw,0&resize=980:*')">Order Now</button> 
+                       <button id="viewCartButton" class="view-cart-btn" onclick="viewCart()">View Cart</button>
+                    </div>
                     </div>
                 </li>
                 <li class="card-item">
+                    <div class="product">
                     <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-cake-donut-1666027443.jpg?crop=0.753xw:1.00xh;0.0829xw,0&resize=980:*"
                         alt="Cake Doughnut">
-                    <div class="card-tag">
-                        <h1>Cake Doughnut</h1>
-                        <p class="price">Rs.135/- </p>
-                        <p class="discription">Instead of yeast, baking powder is used to leaven the batter, which is
-                            also adaptable to all
-                            sorts of flavors, like chocolate or strawberry. Cake doughnuts are ideal for topping-heavy,
-                            as their sturdy structure makes them less susceptible to collapsing under the weight of
-                            toppings.</p>
+                    <div class="card-tag ">
+                        <h2>Cake Doughnut</h2>
+                        <p class="price">Rs. 135.00/-</p>
+                        <button type="submit" class="order-btn " onclick="addToCart('Cake Doughnut',135,'https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-cake-donut-1666027443.jpg?crop=0.753xw:1.00xh;0.0829xw,0&resize=980:*')">Order Now</button>
+                        <button id="viewCartButton" class="view-cart-btn" onclick="viewCart()">View Cart</button>
+                    </div>
                     </div>
                 </li>
                 <li class="card-item">
+                    <div class="product">
                     <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-jelly-donut-1666027488.jpg?crop=0.6666666666666666xw:1xh;center,top&resize=980:*"
                         alt="Jelly Doughnut">
-                    <div class="card-tag">
-                        <h1>Jelly Doughnut</h1>
-                        <p class="price">Rs.150/- </p>
-                        <p class="discription">Jelly doughnuts are traditionally a yeast doughnut without a hole in the
-                            middle, as the
-                            fruit-filling gets piped into the center.</p>
+                    <div class="card-tag ">
+                        <h2>Jelly Doughnut</h2>
+                        <p class="price">Rs. 150.00/-</p>
+                        <button type="submit" class="order-btn " onclick="addToCart('Jelly Doughnut',150,'https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-jelly-donut-1666027488.jpg?crop=0.6666666666666666xw:1xh;center,top&resize=980:*')">Order Now</button>
+                        <button id="viewCartButton" class="view-cart-btn" onclick="viewCart()">View Cart</button>
+                    </div>
                     </div>
                 </li>
                 <li class="card-item">
+                    <div class="product">
                     <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-glazed-donut-1666027549.jpg?crop=0.668xw:1.00xh;0.173xw,0&resize=980:*"
                         alt="Glazed Doughnut">
-                    <div class="card-tag">
-                        <h1>Glazed Doughnut</h1>
-                        <p class="price">Rs.190/- </p>
-                        <p class="discription">Yeast or cake doughnuts can be used in a glazed doughnuts, but these
-                            doughnuts get their name
-                            from the thin glaze that coats the surface. Glazes come in a variety of flavors ranging from
-                            plain or chocolate to maple and beyond the imagination!</p>
+                    <div class="card-tag ">
+                        <h2>Glazed Doughnut</h2>
+                        <p class="price">Rs. 190.00/- </p>
+                        <button type="submit" class="order-btn " onclick="addToCart('Glazed Doughnut',190,'https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-glazed-donut-1666027549.jpg?crop=0.668xw:1.00xh;0.173xw,0&resize=980:*')">Order Now</button>
+                        <button id="viewCartButton" class="view-cart-btn" onclick="viewCart()">View Cart</button>
+                    </div>
                     </div>
                 </li>
                 <li class="card-item">
+                    <div class="product">
                     <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-frosted-donut-1666027598.jpg?crop=0.668xw:1.00xh;0.155xw,0&resize=980:*"
                         alt="Frosted Doughnut">
-                    <div class="card-tag">
-                        <h1>Frosted Doughnut</h1>
-                        <p class="price">Rs.160/- </p>
-                        <p class="discription">These doughnuts are typically made using cake doughnuts, which are able
-                            to withstand a
-                            heavier layer of frosting as well as toppings.</p>
+                    <div class="card-tag ">
+                        <h2>Frosted Doughnut</h2>
+                        <p class="price">Rs. 160.00/- </p>
+                        <button type="submit" class="order-btn " onclick="addToCart('Frosted Doughnut',160,'https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-frosted-donut-1666027598.jpg?crop=0.668xw:1.00xh;0.155xw,0&resize=980:*')">Order Now</button>
+                        <button id="viewCartButton" class="view-cart-btn" onclick="viewCart()">View Cart</button>
+                    </div>
                     </div>
                 </li>
                 <li class="card-item">
+                    <div class="product">
                     <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-twist-1666027979.jpg?crop=0.668xw:1.00xh;0.231xw,0&resize=980:*"
                         alt="Twist Doughnut">
-                    <div class="card-tag">
-                        <h1>Twist Doughnut</h1>
-                        <p class="price">Rs.140/- </p>
-                        <p class="discription">Twisted doughnuts are traditionally made from a yeast dough and rolled in
-                            sugar. They're soft
-                            and pillowy, and something of a cross between churros and beignets in consistency. As they
-                            are a treat in many countries like Korea, China, and the Philippines, you'll find one in
-                            your local Asian bakery.</p>
+                    <div class="card-tag ">
+                        <h2>Twist Doughnut</h2>
+                        <p class="price">Rs. 140.00/- </p>
+                        <button type="submit" class="order-btn " onclick="addToCart('Twist Doughnut',140,'https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-twist-1666027979.jpg?crop=0.668xw:1.00xh;0.231xw,0&resize=980:*')" >Order Now</button>
+                        <button id="viewCartButton" class="view-cart-btn" onclick="viewCart()">View Cart</button>
+                    </div>
                     </div>
                 </li>
             </ul>
         </div>
     </main>
+    
+
     <footer>
         <div class="box-foot">
             <div class="social-icons">
@@ -124,13 +130,18 @@
                 <i class="fa-brands fa-whatsapp icons-foot"></i>
             </div>
             <div class="foot-btn">
-                <button class="foot-btn-type"><a href="./admin.html" class="admin-login">Admin Panal</a> </button>
+                <button class="foot-btn-type">
+                    <a href="./admin.html" class="admin-login">Admin Panal</a> </button>
                 <button class="foot-btn-type">Terms & Conditions</button>
                 <button class="foot-btn-type">Feedback / Report</button>
             </div>
         </div>
         <p class="creator">@copywrite.NikhilPatil</p>
     </footer>
+
+
+    <!-- JS link -->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
