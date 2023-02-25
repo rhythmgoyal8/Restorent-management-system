@@ -20,22 +20,31 @@
             <img class="logo_icon" src="./images/logo_image-removebg-preview.png" alt="logo">
             <img class="logo_name_icon" src="./images/Screenshot__587_-removebg-preview.png" alt="brand name">
             <div class="sign">
+                <a href="./sign-up.html" class="sign_up"><i class="fa-solid fa-user"></i>Sign Up</a>
                 <a href="./sign-in.html" class="sign_in">
-                    <i class="fa-solid fa-user"></i> Sign In</a>
-                <a href="./sign-up.html" class="sign_up"><i class="fa-solid fa-right-to-bracket"></i>Sign Up</a>
+                    <i class="fa-solid fa-right-to-bracket"></i> Sign In</a>
             </div>
         </div>
         <div class="nav">
             <a href="./index.html" class="nav_item">Home</a>
             <a href="./menu.html" class="nav_item">Menu</a>
-            <a href="#review" class="nav_item">Review</a>
+            <a href="./review.html" class="nav_item">Review</a>
             <a href="#contacts" class="nav_item">Contacts</a>
             <a href="./orderpage.html" class="nav_item">Order Online</a>
             <a href="#my_order" class="nav_item">My Order</a>
         </div>
     </header>
-    <div class="dis_img">
-        <img src="./images/donut_lead.jpg" alt="main img">
+    <div class="carousel">
+        <div class="image-container" id="imgs">
+            <img class="carousal-img" src="./images/img-cor-1.jpg" alt=" first image">
+            <img class="carousal-img" src="./images/img-cor-2.jpeg" alt="second image">
+            <img class="carousal-img" src="./images/img-cor-3.jpeg" alt="thrid image">
+            <img class="carousal-img" src="./images/img-cor-4.jpeg" alt="fourth image">
+        </div>
+        <div class="buttons-container">
+            <button class="btn" id="left">Prev</button>
+            <button class="btn" id="right">Next</button>
+        </div>
     </div>
     <!-- Services Details -->
     <section>
@@ -61,8 +70,8 @@
             <div class="foot-btn">
                 <button class="foot-btn-type">
                     <a href="./admin.html" class="admin-login">Admin Panal</a> </button>
-                <button class="foot-btn-type">Terms & Conditions</button>
-                <button class="foot-btn-type">Feedback / Report</button>
+                <button class="foot-btn-type"><a href="./term and condition.html">Terms & Conditions</a></button>
+                <button class="foot-btn-type"><a href="./feedbackform.html">Feedback / Report</a></button>
             </div>
         </div>
         <p class="creator">@copywrite.NikhilPatil</p>
@@ -71,6 +80,7 @@
 
     <!-- JS link -->
     <script src="./js/script.js"></script>
+    <script src="./js/carousal.js"></script>
 </body>
 
 </html>

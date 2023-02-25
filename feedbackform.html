@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sign-in</title>
+    <title>Restraurant_Management_Susytem</title>
     <!-- CSS link -->
     <link rel="stylesheet" href="style.css">
     <!-- cdn font awesome link -->
@@ -44,15 +44,15 @@
             <br>
             <input type="email" name="email" placeholder="Email">
             <br>
-            <input type="password" name="new-password" placeholder="New Password">
+            <input type="text" name="title" id="title" placeholder="Enter title for responce">
+            <input type="range" value="3" min="1" max="5" oninput="this.nextElementSibling.value = this.value">
+            <output>3</output>
             <br>
-            <input type="password" name="password" placeholder="Confirm Password">
+            <textarea name="description" id="description" cols="30" rows="5" placeholder="enter your feedback in detail"></textarea>
             <br>
             <input type="submit" value="register">
-
+            <br>
         </form>
-
-        <p class="account">Already Have account <a class="sign-in" href="./sign-in.html">Sign-up</a></p>
     </main>
 
     <footer>
@@ -66,7 +66,8 @@
                 <i class="fa-brands fa-whatsapp icons-foot"></i>
             </div>
             <div class="foot-btn">
-                <button class="foot-btn-type"><a href="./admin.html" class="admin-login">Admin Panal</a> </button>
+                <button class="foot-btn-type">
+                    <a href="./admin.html" class="admin-login">Admin Panal</a> </button>
                 <button class="foot-btn-type"><a href="./term and condition.html">Terms & Conditions</a></button>
                 <button class="foot-btn-type"><a href="./feedbackform.html">Feedback / Report</a></button>
             </div>

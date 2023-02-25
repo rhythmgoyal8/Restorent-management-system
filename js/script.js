@@ -72,3 +72,4 @@ function addToCart(productName, productPrice, imageUrl) {
   function viewCart() {
 	window.location.href = "addtocartpage.html";
   }
+

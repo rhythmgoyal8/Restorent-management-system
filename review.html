@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sign-in</title>
+    <title>Restraurant_Management_Susytem</title>
     <!-- CSS link -->
     <link rel="stylesheet" href="style.css">
     <!-- cdn font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- JQUERY CDN LINK -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -34,26 +36,12 @@
             <a href="#my_order" class="nav_item">My Order</a>
         </div>
     </header>
-    <main>
-        <form action="./jsp pages/signup.jsp" class="create-account">
-            <h3>Create Account</h3>
+    <section class="review-section">
+        <div id="reviews-container" class="review-cardbox">
 
-            <input type="text" name="fname" placeholder="First Name">
-            <br>
-            <input type="text" name="lname" placeholder="Last Name">
-            <br>
-            <input type="email" name="email" placeholder="Email">
-            <br>
-            <input type="password" name="new-password" placeholder="New Password">
-            <br>
-            <input type="password" name="password" placeholder="Confirm Password">
-            <br>
-            <input type="submit" value="register">
+        </div>
 
-        </form>
-
-        <p class="account">Already Have account <a class="sign-in" href="./sign-in.html">Sign-up</a></p>
-    </main>
+    </section>
 
     <footer>
         <div class="box-foot">
@@ -66,13 +54,18 @@
                 <i class="fa-brands fa-whatsapp icons-foot"></i>
             </div>
             <div class="foot-btn">
-                <button class="foot-btn-type"><a href="./admin.html" class="admin-login">Admin Panal</a> </button>
+                <button class="foot-btn-type">
+                    <a href="./admin.html" class="admin-login">Admin Panal</a> </button>
                 <button class="foot-btn-type"><a href="./term and condition.html">Terms & Conditions</a></button>
                 <button class="foot-btn-type"><a href="./feedbackform.html">Feedback / Report</a></button>
             </div>
         </div>
         <p class="creator">@copywrite.NikhilPatil</p>
     </footer>
+
+
+    <!-- JS link -->
+    <script src="./js/review.js"></script>
 </body>
 
 </html>

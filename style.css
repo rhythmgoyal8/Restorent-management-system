@@ -237,6 +237,9 @@ footer {
         flex: 45%;
         margin: 10px;
     }
+    .review-card{
+        flex: 30%;
+    }
 }
 
 @media only screen and (max-width: 425px) {
@@ -319,11 +322,12 @@ button,
 .account a {
     text-decoration: none;
 }
+
 /* sign in sign out and admin page css end */
 
 /* order online start */
 
-.order-btn{
+.order-btn {
     margin-top: 3vw;
     width: 100%;
     color: rgba(176, 103, 196, 0.986);
@@ -331,9 +335,10 @@ button,
     padding: 1.5vw 0 1.5vw 0;
     font-size: 20px;
     font-weight: bold;
-    
+
 }
-.view-cart-btn{
+
+.view-cart-btn {
     margin-top: 3vw;
     width: 100%;
     color: rgba(151, 209, 209);
@@ -341,6 +346,93 @@ button,
     padding: 1.5vw 0 1.5vw 0;
     font-size: 20px;
     font-weight: bold;
-    
+
 }
+
 /* order online end */
+
+/* Home Page carousal css start */
+
+div div .carousal-img {
+    width: 1400px;
+    height: 36.6vw;
+    object-fit: cover;
+}
+
+.carousel {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    height: 39vw;
+    width: 90vw;
+    overflow: hidden;
+    margin: 5vw;
+}
+
+.image-container {
+    display: flex;
+    transform: translateX(0px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: rebeccapurple;
+    color: #ffffff;
+    border: none;
+    width: 49.5%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+/* Home Page carousal css end */
+
+/* Rating Page CSS Start */
+
+.review-cardbox{
+    display: flex;
+    padding: 1.5%;
+    flex-wrap: wrap;
+}
+.review-card{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 20%;
+    padding: 0.5%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1%;
+}
+
+.review-img-id{
+    display: flex;
+    padding: 1.5%;
+}
+.review-images{
+    width: 40%;
+    height: 80%;
+    border-radius: 50%;
+}
+
+.review-images img{
+    width: 50%;
+    height: 90%;
+    border-radius: 50%;
+}
+@media (max-width: 768px) {
+    .review-card {
+      flex: 31%;
+    }
+  }
+  @media (max-width: 425px){
+  .review-card {
+      flex: 50%;
+  }
+}

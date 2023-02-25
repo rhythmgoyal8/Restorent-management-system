@@ -8,7 +8,7 @@
     <title>Restraurant_Management_Susytem</title>
     <!-- CSS link -->
     <link rel="stylesheet" href="style.css">
-    
+
     <!-- cdn font awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -21,22 +21,22 @@
             <img class="logo_icon" src="./images/logo_image-removebg-preview.png" alt="logo">
             <img class="logo_name_icon" src="./images/Screenshot__587_-removebg-preview.png" alt="brand name">
             <div class="sign">
+                <a href="./sign-up.html" class="sign_up"><i class="fa-solid fa-user"></i>Sign Up</a>
                 <a href="./sign-in.html" class="sign_in">
-                    <i class="fa-solid fa-user"></i> Sign In</a>
-                <a href="./sign-up.html" class="sign_up"><i class="fa-solid fa-right-to-bracket"></i>Sign Up</a>
+                    <i class="fa-solid fa-right-to-bracket"></i> Sign In</a>
             </div>
         </div>
-        
+
         <div class="nav">
             <a href="./index.html" class="nav_item">Home</a>
             <a href="./menu.html" class="nav_item">Menu</a>
-            <a href="#review" class="nav_item">Review</a>
+            <a href="./review.html" class="nav_item">Review</a>
             <a href="#contacts" class="nav_item">Contacts</a>
             <a href="./orderpage.html" class="nav_item">Order Online</a>
             <a href="#my_order" class="nav_item">My Order</a>
         </div>
 
-        
+
     </header>
 
     <main>
@@ -44,80 +44,133 @@
             <ul class="card">
                 <li class="card-item">
                     <div class="product">
-                    <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-yeast-donut-1666027387.jpg?crop=0.668xw:1.00xh;0.301xw,0&resize=980:*"
-                        alt="Yeast Doughnut">
-                    <div class="card-tag " >
-                        <h2>Yeast Doughnut</h2>
-                        <p class="price">Rs. 120.00/-</p>
-                       <button type="submit" class="order-btn "  onclick="addToCart('Yeast Doughnut',120,'https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-yeast-donut-1666027387.jpg?crop=0.668xw:1.00xh;0.301xw,0&resize=980:*')">Order Now</button> 
-                       <button id="viewCartButton" class="view-cart-btn" onclick="viewCart()">View Cart</button>
-                    </div>
-                    </div>
-                </li>
-                <li class="card-item">
-                    <div class="product">
-                    <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-cake-donut-1666027443.jpg?crop=0.753xw:1.00xh;0.0829xw,0&resize=980:*"
-                        alt="Cake Doughnut">
-                    <div class="card-tag ">
-                        <h2>Cake Doughnut</h2>
-                        <p class="price">Rs. 135.00/-</p>
-                        <button type="submit" class="order-btn " onclick="addToCart('Cake Doughnut',135,'https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-cake-donut-1666027443.jpg?crop=0.753xw:1.00xh;0.0829xw,0&resize=980:*')">Order Now</button>
-                        <button id="viewCartButton" class="view-cart-btn" onclick="viewCart()">View Cart</button>
-                    </div>
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-yeast-donut-1666027387.jpg?crop=0.668xw:1.00xh;0.301xw,0&resize=980:*"
+                            alt="Yeast Doughnut">
+                        <div class="card-tag ">
+                            <h2>Yeast Doughnut</h2>
+                            <p class="price">Rs. 120.00/-</p>
+                            <button type="submit" class="order-btn "
+                                onclick="addToCart('Yeast Doughnut',120,'https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-yeast-donut-1666027387.jpg?crop=0.668xw:1.00xh;0.301xw,0&resize=980:*')">Order
+                                Now</button>
+                            <button id="viewCartButton" class="view-cart-btn" onclick="viewCart()">View Cart</button>
+                        </div>
                     </div>
                 </li>
                 <li class="card-item">
                     <div class="product">
-                    <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-jelly-donut-1666027488.jpg?crop=0.6666666666666666xw:1xh;center,top&resize=980:*"
-                        alt="Jelly Doughnut">
-                    <div class="card-tag ">
-                        <h2>Jelly Doughnut</h2>
-                        <p class="price">Rs. 150.00/-</p>
-                        <button type="submit" class="order-btn " onclick="addToCart('Jelly Doughnut',150,'https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-jelly-donut-1666027488.jpg?crop=0.6666666666666666xw:1xh;center,top&resize=980:*')">Order Now</button>
-                        <button id="viewCartButton" class="view-cart-btn" onclick="viewCart()">View Cart</button>
-                    </div>
-                    </div>
-                </li>
-                <li class="card-item">
-                    <div class="product">
-                    <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-glazed-donut-1666027549.jpg?crop=0.668xw:1.00xh;0.173xw,0&resize=980:*"
-                        alt="Glazed Doughnut">
-                    <div class="card-tag ">
-                        <h2>Glazed Doughnut</h2>
-                        <p class="price">Rs. 190.00/- </p>
-                        <button type="submit" class="order-btn " onclick="addToCart('Glazed Doughnut',190,'https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-glazed-donut-1666027549.jpg?crop=0.668xw:1.00xh;0.173xw,0&resize=980:*')">Order Now</button>
-                        <button id="viewCartButton" class="view-cart-btn" onclick="viewCart()">View Cart</button>
-                    </div>
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-cake-donut-1666027443.jpg?crop=0.753xw:1.00xh;0.0829xw,0&resize=980:*"
+                            alt="Cake Doughnut">
+                        <div class="card-tag ">
+                            <h2>Cake Doughnut</h2>
+                            <p class="price">Rs. 135.00/-</p>
+                            <button type="submit" class="order-btn "
+                                onclick="addToCart('Cake Doughnut',135,'https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-cake-donut-1666027443.jpg?crop=0.753xw:1.00xh;0.0829xw,0&resize=980:*')">Order
+                                Now</button>
+                            <button id="viewCartButton" class="view-cart-btn" onclick="viewCart()">View Cart</button>
+                        </div>
                     </div>
                 </li>
                 <li class="card-item">
                     <div class="product">
-                    <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-frosted-donut-1666027598.jpg?crop=0.668xw:1.00xh;0.155xw,0&resize=980:*"
-                        alt="Frosted Doughnut">
-                    <div class="card-tag ">
-                        <h2>Frosted Doughnut</h2>
-                        <p class="price">Rs. 160.00/- </p>
-                        <button type="submit" class="order-btn " onclick="addToCart('Frosted Doughnut',160,'https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-frosted-donut-1666027598.jpg?crop=0.668xw:1.00xh;0.155xw,0&resize=980:*')">Order Now</button>
-                        <button id="viewCartButton" class="view-cart-btn" onclick="viewCart()">View Cart</button>
-                    </div>
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-jelly-donut-1666027488.jpg?crop=0.6666666666666666xw:1xh;center,top&resize=980:*"
+                            alt="Jelly Doughnut">
+                        <div class="card-tag ">
+                            <h2>Jelly Doughnut</h2>
+                            <p class="price">Rs. 150.00/-</p>
+                            <button type="submit" class="order-btn "
+                                onclick="addToCart('Jelly Doughnut',150,'https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-jelly-donut-1666027488.jpg?crop=0.6666666666666666xw:1xh;center,top&resize=980:*')">Order
+                                Now</button>
+                            <button id="viewCartButton" class="view-cart-btn" onclick="viewCart()">View Cart</button>
+                        </div>
                     </div>
                 </li>
                 <li class="card-item">
                     <div class="product">
-                    <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-twist-1666027979.jpg?crop=0.668xw:1.00xh;0.231xw,0&resize=980:*"
-                        alt="Twist Doughnut">
-                    <div class="card-tag ">
-                        <h2>Twist Doughnut</h2>
-                        <p class="price">Rs. 140.00/- </p>
-                        <button type="submit" class="order-btn " onclick="addToCart('Twist Doughnut',140,'https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-twist-1666027979.jpg?crop=0.668xw:1.00xh;0.231xw,0&resize=980:*')" >Order Now</button>
-                        <button id="viewCartButton" class="view-cart-btn" onclick="viewCart()">View Cart</button>
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-glazed-donut-1666027549.jpg?crop=0.668xw:1.00xh;0.173xw,0&resize=980:*"
+                            alt="Glazed Doughnut">
+                        <div class="card-tag ">
+                            <h2>Glazed Doughnut</h2>
+                            <p class="price">Rs. 190.00/- </p>
+                            <button type="submit" class="order-btn "
+                                onclick="addToCart('Glazed Doughnut',190,'https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-glazed-donut-1666027549.jpg?crop=0.668xw:1.00xh;0.173xw,0&resize=980:*')">Order
+                                Now</button>
+                            <button id="viewCartButton" class="view-cart-btn" onclick="viewCart()">View Cart</button>
+                        </div>
                     </div>
+                </li>
+                <li class="card-item">
+                    <div class="product">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-frosted-donut-1666027598.jpg?crop=0.668xw:1.00xh;0.155xw,0&resize=980:*"
+                            alt="Frosted Doughnut">
+                        <div class="card-tag ">
+                            <h2>Frosted Doughnut</h2>
+                            <p class="price">Rs. 160.00/- </p>
+                            <button type="submit" class="order-btn "
+                                onclick="addToCart('Frosted Doughnut',160,'https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-frosted-donut-1666027598.jpg?crop=0.668xw:1.00xh;0.155xw,0&resize=980:*')">Order
+                                Now</button>
+                            <button id="viewCartButton" class="view-cart-btn" onclick="viewCart()">View Cart</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="card-item">
+                    <div class="product">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-twist-1666027979.jpg?crop=0.668xw:1.00xh;0.231xw,0&resize=980:*"
+                            alt="Twist Doughnut">
+                        <div class="card-tag ">
+                            <h2>Twist Doughnut</h2>
+                            <p class="price">Rs. 140.00/- </p>
+                            <button type="submit" class="order-btn "
+                                onclick="addToCart('Twist Doughnut',140,'https://hips.hearstapps.com/hmg-prod/images/types-of-donuts-twist-1666027979.jpg?crop=0.668xw:1.00xh;0.231xw,0&resize=980:*')">Order
+                                Now</button>
+                            <button id="viewCartButton" class="view-cart-btn" onclick="viewCart()">View Cart</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="card-item">
+                    <div class="product">
+                        <img src="https://www.allrecipes.com/thmb/MCd0d7PPJjr44hZNycFnBGrdvvk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/image-44-bc1d78013be943aa9fd89d69defc003f.jpeg" alt="Boston Cream Doughnut">
+                        <div class="card-tag ">
+                            <h2>Boston Cream Doughnut</h2>
+                            <p class="price">Rs. 155.00/- </p>
+                            <button type="submit" class="order-btn "
+                                onclick="addToCart('Boston Cream Doughnut',155,'https://www.allrecipes.com/thmb/MCd0d7PPJjr44hZNycFnBGrdvvk=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/image-44-bc1d78013be943aa9fd89d69defc003f.jpeg')">Order
+                                Now</button>
+                            <button id="viewCartButton" class="view-cart-btn" onclick="viewCart()">View Cart</button>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="card-item">
+                    <div class="product">
+                        <img src="https://www.allrecipes.com/thmb/LHHTAyjaO-RuHzLMepX2gbumQ8w=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Screen-Shot-2020-07-28-at-9.01.27-AM-d0c4e186bf54430dbfeb9447865330a8.png" alt="Blueberry Doughnut">
+                        <div class="card-tag ">
+                            <h2>Blueberry Doughnut</h2>
+                            <p class="price">Rs. 145.00/- </p>
+                            <button type="submit" class="order-btn "
+                                onclick="addToCart('Blueberry Doughnut',145,'https://www.allrecipes.com/thmb/LHHTAyjaO-RuHzLMepX2gbumQ8w=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Screen-Shot-2020-07-28-at-9.01.27-AM-d0c4e186bf54430dbfeb9447865330a8.png')">Order
+                                Now</button>
+                            <button id="viewCartButton" class="view-cart-btn" onclick="viewCart()">View Cart</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card-item">
+                    <div class="product">
+                        <img src="https://www.allrecipes.com/thmb/jtuE1Fpfo793vxHQLq867e9_4PA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/3236714-8eed9319d333452ab51567d82df2261e.jpg" alt="Cream-Filled Doughnut">
+                        <div class="card-tag ">
+                            <h2>Cream-Filled Doughnut</h2>
+                            <p class="price">Rs. 145.00/- </p>
+                            <button type="submit" class="order-btn "
+                                onclick="addToCart('Blueberry Doughnut',145,'https://www.allrecipes.com/thmb/jtuE1Fpfo793vxHQLq867e9_4PA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/3236714-8eed9319d333452ab51567d82df2261e.jpg')">Order
+                                Now</button>
+                            <button id="viewCartButton" class="view-cart-btn" onclick="viewCart()">View Cart</button>
+                        </div>
                     </div>
                 </li>
             </ul>
         </div>
     </main>
-    
+
 
     <footer>
         <div class="box-foot">
@@ -132,8 +185,8 @@
             <div class="foot-btn">
                 <button class="foot-btn-type">
                     <a href="./admin.html" class="admin-login">Admin Panal</a> </button>
-                <button class="foot-btn-type">Terms & Conditions</button>
-                <button class="foot-btn-type">Feedback / Report</button>
+                <button class="foot-btn-type"><a href="./term and condition.html">Terms & Conditions</a>Terms & Conditions</button>
+                <button class="foot-btn-type"><a href="./feedbackform.html">Feedback / Report</a></button>
             </div>
         </div>
         <p class="creator">@copywrite.NikhilPatil</p>
